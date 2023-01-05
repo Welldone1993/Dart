@@ -1,8 +1,8 @@
 import 'dart:io';
 
-double Ascii(String num) {
-  double ascii = 0;
-  double n = 1;
+int Ascii(String num) {
+  int ascii = 0;
+  int n = 1;
   int counter = num.length;
   for (int i = counter - 1; i >= 0; i--) {
     int letterAscii = (num.codeUnitAt(i) - 48);
@@ -22,9 +22,10 @@ void main() {
   operation = (stdin.readLineSync()!);
   print("Enter Second Number:");
   secondNumber = (stdin.readLineSync()!);
-  double? num1 = Ascii(firtsNumber);
-  double? num2 = Ascii(secondNumber);
-  double? answer = 0;
+  print("--------------------");
+  int? num1 = Ascii(firtsNumber);
+  int? num2 = Ascii(secondNumber);
+  int? answer = 0;
 
   switch (operation) {
     case "+":
@@ -39,7 +40,7 @@ void main() {
       answer = num1 * num2;
       break;
     case "/":
-      answer = num1 / num2;
+      answer = num1 ~/ num2;
 
       break;
     default:
