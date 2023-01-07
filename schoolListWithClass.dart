@@ -124,8 +124,8 @@ class Student {
       print("Personal number :");
       print(studentPersonalNumber.elementAt(i));
       code++;
+      print("----------");
     }
-    print("----------");
   }
 
   Student(
