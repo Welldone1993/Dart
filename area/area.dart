@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'pvarea.dart';
+import 'classArea.dart';
 
 void main() {
   Area square = Area(10,10);
