@@ -1,5 +1,7 @@
-abstract class Food {
-  KindOfFood();
+ class Food {
+  KindOfFood(){
+    print("any kind");
+  }
 }
 
 class Vegtable extends Food {
