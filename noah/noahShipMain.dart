@@ -16,4 +16,9 @@ void main() {
   Lion lion1 = Lion(firstMeat, "aqa shire");
   lion1.Eat();
   lion1.food.KindOfFood();
+  //------------------------
+  Food pizaa = Food();
+  Person person = Person(pizaa, "amir");
+  person.Eat();
+  person.food.KindOfFood();
 }

@@ -33,3 +33,11 @@ class Lion extends Animal {
     stdout.write("$name likes to eat : ");
   }
 }
+class Person extends Animal {
+  Person(Food food, String name) : super(food, name);
+
+  @override
+  Eat() {
+    stdout.write("$name likes to eat : ");
+  }
+}
