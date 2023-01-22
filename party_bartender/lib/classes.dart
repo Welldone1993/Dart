@@ -10,7 +10,7 @@ class IdAndToken {
   IdAndToken(this.id, this.token);
 
   int id = idCounter;
-  int token;
+  final int token;
 }
 
 abstract class PartyMembers {
@@ -106,4 +106,3 @@ class GuestUnder18 extends PartyMembers {
                you have to wait for ${18 - age} more years""";
   }
 }
-
