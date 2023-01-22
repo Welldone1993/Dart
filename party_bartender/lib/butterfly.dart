@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'dart:core';
 
-//printing butterfly with delay of 250 milli second per line
+//printing butterfly with delay of 200 milli second per line
 Future printButterfly() async {
   for (int line = 0; line < 10; line++) {
     await Future.delayed(Duration(milliseconds: 200));
