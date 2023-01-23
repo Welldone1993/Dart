@@ -4,7 +4,7 @@ import 'dart:core';
 //printing butterfly with delay of 250 milli second per line
 Future printButterfly() async {
   for (int line = 0; line < 10; line++) {
-    await Future.delayed(Duration(milliseconds: 250));
+    await Future.delayed(Duration(milliseconds: 200));
     for (int space = 0; space < line; space++) {
       stdout.write(' ');
     }
@@ -20,7 +20,7 @@ Future printButterfly() async {
     }
   }
   for (int line = 0; line < 10; line++) {
-    await Future.delayed(Duration(milliseconds: 250));
+    await Future.delayed(Duration(milliseconds: 200));
     for (int space = 10; space > line + 1; space--) {
       stdout.write(' ');
     }
@@ -44,7 +44,7 @@ Future rules() async {
   """;
   int stringCounter = rules.length;
   for (int word = 0; word < stringCounter; word++) {
-    await Future.delayed(Duration(milliseconds: 100));
+    await Future.delayed(Duration(milliseconds: 20));
     stdout.write(rules[word]);
   }
 }
