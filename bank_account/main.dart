@@ -18,7 +18,7 @@ void main() {
         double initial = double.tryParse(stdin.readLineSync());
         Account account = newAccount(initial);
         print(
-          'Your id is : ${accountId - 1}\n${account.showBalance}',
+          'Your id is : ${accountId-1}\n${account.showBalance}',
         );
         //create method
         break;
@@ -53,7 +53,6 @@ void main() {
               checker
                   ? print(account.showBalance)
                   : print('insufficient balance');
-              ;
               //withdraw method
               break;
             case 'E':

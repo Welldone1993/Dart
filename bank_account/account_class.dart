@@ -1,7 +1,7 @@
 class Account {
   double _balance;
   Account(double balance) {
-    this._balance = balance;
+    _balance = balance;
   }
 
 //deposit method
